@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import Test from "../src/Test";
+import Test from "@src/Test";
 
 export default function Home() {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import { render } from "../testUtils";
-import Loading from "@src/Test";
+import Index from "@pages/index";
 
 describe("Loading component", () => {
   it("matches snapshot", () => {
-    const { asFragment } = render(<Loading />, {});
+    const { asFragment } = render(<Index />, {});
     expect(asFragment()).toMatchSnapshot();
   });
 });

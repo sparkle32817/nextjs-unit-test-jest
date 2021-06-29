@@ -5,6 +5,7 @@ module.exports = {
 
   testPathIgnorePatterns: ['<rootDir>[/\\\\](node_modules|.next)[/\\\\]'],
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$'],
+  testEnvironment: 'jsdom',
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',
@@ -12,8 +13,7 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test_unit/__mocks__/fileMock.js',
-  },
-  transform: {
-    '^.+\\.tsx?$': 'babel-jest',
+    "@src/(.*)": "<rootDir>/src/$1",
+    "@pages/(.*)": "<rootDir>/pages/$1"
   },
 }
