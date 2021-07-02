@@ -1,5 +1,5 @@
 module.exports = {
-  roots: ['<rootDir>/test_unit/'],
+  roots: ['<rootDir>/__test__/unit/'],
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'jsx'],
 
@@ -12,7 +12,7 @@ module.exports = {
   ],
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
-    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test_unit/__mocks__/fileMock.js',
+    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/__test__/__mocks__/fileMock.js',
     "@src/(.*)": "<rootDir>/src/$1",
     "@pages/(.*)": "<rootDir>/pages/$1"
   },

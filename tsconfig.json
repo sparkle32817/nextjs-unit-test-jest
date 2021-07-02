@@ -15,10 +15,11 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@pages/*": ["pages/*"],
-      "@src/*": ["src/*"]
-    }
+      "pages/*": ["pages/*"],
+      "src/*": ["src/*"]
+    },
+    "types": ["jest"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", ".next", "out"]
 }

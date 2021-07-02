@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "../testUtils";
-import Index from "@pages/index";
+import Index from "pages/index";
 
 describe("Loading component", () => {
   it("matches snapshot", () => {

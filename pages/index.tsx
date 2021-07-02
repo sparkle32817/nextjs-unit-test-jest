@@ -1,11 +1,11 @@
 import Head from "next/head";
 
-import Test from "@src/Test";
+import Test from "src/Test";
 
 export default function Home() {
   return (
     <div>
-      <div>This is test page</div>
+      <div data-testid="testing-production">This is test page</div>
       <div
         style={{
           width: 500,
