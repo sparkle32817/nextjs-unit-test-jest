@@ -1,5 +1,5 @@
 module.exports = {
-  roots: ['<rootDir>/__test__/unit/'],
+  roots: ['<rootDir>/__test__/'],
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'jsx'],
 
@@ -13,7 +13,16 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/__test__/__mocks__/fileMock.js',
-    "@src/(.*)": "<rootDir>/src/$1",
-    "@pages/(.*)": "<rootDir>/pages/$1"
+    "src/(.*)": "<rootDir>/src/$1",
+    "pages/(.*)": "<rootDir>/pages/$1"
   },
+  setupFilesAfterEnv: [
+    "@testing-library/jest-dom/extend-expect"
+  ],
+  collectCoverageFrom: [
+    "**/pages/**/*.tsx",
+    "**/src/**/*.tsx",
+    "!**/node_modules/**",
+    "!**/__test__/**"
+  ]
 }

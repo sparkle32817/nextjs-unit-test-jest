@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading component matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      data-testid="testing-production"
+    >
+      This is test page
+    </div>
+    <div
+      style="width: 500px; height: 500px; display: flex; align-items: center; justify-content: center;"
+    >
+      <span
+        class="css-1683kmo"
+      >
+        <span
+          class="css-1rjycqt"
+        />
+        <span
+          class="css-181511v"
+        />
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
