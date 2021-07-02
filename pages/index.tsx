@@ -1,22 +1,12 @@
-import Head from "next/head";
+import { FC } from "react";
+import BookList from "src/components/BookList";
 
-import Test from "src/Test";
-
-export default function Home() {
+const BookListPage: FC = () => {
   return (
     <div>
-      <div data-testid="testing-production">This is test page</div>
-      <div
-        style={{
-          width: 500,
-          height: 500,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Test />
-      </div>
+      <BookList />
     </div>
   );
-}
+};
+
+export default BookListPage;
