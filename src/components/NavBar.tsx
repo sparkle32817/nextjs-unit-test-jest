@@ -48,6 +48,7 @@ const Navbar = () => {
               List Books
             </Button>
           </a>
+          {/* https://codesandbox.io/s/reduxtoolkit-typescript-test-mp4zo */}
         </Link>
         <Link href="/book/add">
           <a>

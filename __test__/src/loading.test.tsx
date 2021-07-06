@@ -4,7 +4,7 @@ import Loading from "src/components/Test";
 
 describe("Loading component", () => {
   it("matches snapshot", () => {
-    const { asFragment } = render(<Loading />, {});
+    const { asFragment } = render(<Loading />);
     expect(asFragment()).toMatchSnapshot();
   });
 });
